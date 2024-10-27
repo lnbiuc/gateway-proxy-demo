@@ -19,7 +19,7 @@ generator: "@tarslib/widdershins v4.0.23"
 
 ---
 
-# proxy-text
+# [proxy-test](https://github.com/lnbiuc/proxy-test)
 
 Base URLs:
 
