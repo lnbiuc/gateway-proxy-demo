@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: gateway-proxy-demo
+  cloud:
+    gateway:
+      routes:
+        - id: proxy_route
+          uri: http://localhost:9000
+          predicates:
+            - Path=/proxy/**
+          filters:
+            - RewritePath=/proxy/(?<segment>.*), /${segment}
